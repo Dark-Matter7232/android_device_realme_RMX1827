@@ -1,9 +1,6 @@
 # Device path
 LOCAL_PATH := device/oppo/CPH1859
 
-
-ALLOW_MISSING_DEPENDENCIES=true;
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
