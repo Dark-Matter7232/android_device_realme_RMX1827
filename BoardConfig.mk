@@ -144,7 +144,7 @@ TW_DEFAULT_EXTERNAL_STORAGE := true
 
 # Encryption
 
-PLATFORM_SECURITY_PATCH := 2019-08-05
+PLATFORM_SECURITY_PATCH := 2019-10-05
 TW_INCLUDE_CRYPTO := true
 TW_CRYPTO_FS_TYPE := "ext4"
 TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
