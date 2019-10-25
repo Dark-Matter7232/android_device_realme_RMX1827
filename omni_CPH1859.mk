@@ -18,7 +18,7 @@ PRODUCT_NAME := omni_CPH1859
 # enable stock zip packages flash
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.treble.enabled=true \
-    persist.sys.usb.config=mtp \
+    persist.sys.usb.config=mtp,adb \
     persist.service.adb.enable=1 \
     persist.service.debuggable=1 \
     ro.secure=1 \
