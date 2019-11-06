@@ -1,6 +1,7 @@
-
 #
-# Copyright (C) 2017 The Android Open Source Project
+# Copyright 2019 The Android Open Source Project
+# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2013-2019 OmniROM
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -64,6 +65,8 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user androidboot.sel
 
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/zImage
 
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x14f88000 --tags_offset 0x13f88000 --header_version 1
+
 # Platform
 
 TARGET_BOARD_PLATFORM := mt6771
@@ -111,9 +114,9 @@ TW_THEME := portrait_hdpi
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
-# system.prop
+# system properties
 
-TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
+TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system_prop.mk
 
 # Workaround for error copying vendor files to recovery ramdisk
 
@@ -124,6 +127,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_MAX_BRIGHTNESS := 255
+TW_DEFAULT_BRIGHTNESS := 178
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_USE_TOOLBOX := true
@@ -136,8 +140,6 @@ TW_DEFAULT_LANGUAGE := en
 
 # Storage
 
-TW_INTERNAL_STORAGE_PATH := "/data/media"
-TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_DEFAULT_EXTERNAL_STORAGE := true

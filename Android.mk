@@ -1,5 +1,7 @@
 #
-# Copyright (C) 2017 The Android Open Source Project
+# Copyright 2019 The Android Open Source Project
+# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2013-2019 OmniROM
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,13 +16,10 @@
 # limitations under the License.
 #
 
+ifneq ($(filter CPH1859,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),CPH1859)
-
 include $(call all-makefiles-under,$(LOCAL_PATH))
-
-include $(CLEAR_VARS)
 
 endif
