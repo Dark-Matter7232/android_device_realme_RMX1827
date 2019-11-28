@@ -144,9 +144,14 @@ TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_DEFAULT_EXTERNAL_STORAGE := true
 
-# Encryption
+#OS
 
 PLATFORM_SECURITY_PATCH := 2019-10-05
+BOARD_OS_VERSION := 9.0.0
+BOARD_HEADER_VERSION := 1
+
+# Encryption
+
 TW_INCLUDE_CRYPTO := true
 TW_CRYPTO_FS_TYPE := "ext4"
 TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
