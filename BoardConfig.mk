@@ -150,14 +150,6 @@ PLATFORM_SECURITY_PATCH := 2019-10-05
 BOARD_OS_VERSION := 9.0.0
 BOARD_HEADER_VERSION := 1
 
-# Encryption
-
-TW_INCLUDE_CRYPTO := true
-TW_CRYPTO_FS_TYPE := "ext4"
-TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
-TW_CRYPTO_MNT_POINT := "/data"
-TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
-
 # Debug
 
 TWRP_INCLUDE_LOGCAT := true
