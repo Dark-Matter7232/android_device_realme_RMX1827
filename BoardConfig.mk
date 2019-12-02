@@ -23,6 +23,7 @@ LOCAL_PATH := device/oppo/CPH1859
 #system-as-root
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+TARGET_OTA_ASSERT_DEVICE := CPH1859,CPH1861
 
 # Architecture: 
 # Note: ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
