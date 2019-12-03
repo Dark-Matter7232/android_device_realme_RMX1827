@@ -5,7 +5,7 @@
 /system_image       emmc	/dev/block/bootdevice/by-name/system			flags=backup=1;flashimg=1
 /cache		    ext4	/dev/block/platform/bootdevice/by-name/cache
 /data		    ext4	/dev/block/platform/bootdevice/by-name/userdata         flags=encryptable=footer
-/vendor             ext4        /dev/block/platform/bootdevice/by-name/vendor		flags=display="Vendor";wipeingui
+/vendor             ext4        /dev/block/platform/bootdevice/by-name/vendor		flags=display="Vendor";wipeingui;backup=1
 /vendor_image	    emmc	/dev/block/bootdevice/by-name/vendor			flags=backup=1;flashimg=1
 /logo		    emmc	/dev/block/platform/bootdevice/by-name/logo             flags=display="Logo"
 /misc		    emmc	/dev/block/platform/bootdevice/by-name/misc
