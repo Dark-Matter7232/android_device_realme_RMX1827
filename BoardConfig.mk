@@ -29,9 +29,6 @@ TARGET_OTA_ASSERT_DEVICE := CPH1859
 # Note: ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
 # use ro.product.cpu.abilist instead.
 
-ENABLE_CPUSETS := true
-ENABLE_SCHEDBOOST := true
-
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
