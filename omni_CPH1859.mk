@@ -42,5 +42,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.service.debuggable=1 \
     ro.secure=1 \
     ro.adb.secure=0 \
-    ro.debuggable=1 \
-    ro.allow.mock.location=0
+    ro.debuggable=1
