@@ -23,3 +23,8 @@ ro.product.name=CPH1859
 ro.product.device=CPH1859
 ro.build.product=CPH1859
 ro.treble.enabled=true
+sys.usb.controller=musb-hdrc
+sys.usb.ffs.aio_compat=true
+ro.sys.usb.storage.type=mtp
+sys.usb.config-mtp,adb
+sys.usb.state=mtp,adb

@@ -29,14 +29,18 @@ PRODUCT_MANUFACTURER := OPPO
 PRODUCT_MODEL := CPH1859
 PRODUCT_NAME := omni_CPH1859
 
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=CPH1859 \
+    BUILD_PRODUCT=CPH1859 \
+    TARGET_DEVICE=CPH1859
+
 # Override some system properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.treble.enabled=true \
     persist.sys.usb.config=mtp,adb \
     persist.service.adb.enable=1 \
     persist.service.debuggable=1 \
     ro.secure=1 \
     ro.adb.secure=0 \
     ro.debuggable=1 \
-    ro.allow.mock.location=0 \
-    sys.usb.ffs.aio_compat=true
+    ro.allow.mock.location=0
