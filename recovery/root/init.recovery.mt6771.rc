@@ -1,5 +1,3 @@
-import /trustkernel.rc
-
 on init
     # Somehow AOSP build system hasn't provided a symlink here
     symlink /system_root/system /system

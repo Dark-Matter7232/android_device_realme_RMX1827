@@ -33,12 +33,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=CPH1859 \
     BUILD_PRODUCT=CPH1859 \
     TARGET_DEVICE=CPH1859
-
-# Override some system properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp,adb \
-    persist.service.adb.enable=1 \
-    persist.service.debuggable=1 \
-    ro.secure=1 \
-    ro.adb.secure=0 \
-    ro.debuggable=1
