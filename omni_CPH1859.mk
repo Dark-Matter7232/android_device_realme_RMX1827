@@ -34,7 +34,7 @@ PRODUCT_MODEL := CPH1859
 PRODUCT_NAME := omni_CPH1859
 
 # Override some system properties
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.treble.enabled=true \
     persist.sys.usb.config=mtp,adb \
     persist.service.adb.enable=1 \
@@ -42,4 +42,5 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.secure=1 \
     ro.adb.secure=0 \
     ro.debuggable=1 \
-    ro.allow.mock.location=0
+    ro.allow.mock.location=0 \
+    sys.usb.ffs.aio_compat=true
