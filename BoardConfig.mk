@@ -124,19 +124,17 @@ TARGET_COPY_OUT_VENDOR := vendor
 # TWRP Related
 
 TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_DEVICE_VERSION := $(shell date -u +"%Y%m%d")
-TW_MAX_BRIGHTNESS := 356
-TW_DEFAULT_BRIGHTNESS := 265
+TW_DEVICE_VERSION := $(shell date -u +" %F")
+TW_MAX_BRIGHTNESS := 456
+TW_DEFAULT_BRIGHTNESS := 365
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file #is this corect path?
 TW_USE_TOOLBOX := true
 TW_NO_SCREEN_BLANK := true
 TW_NO_BATT_PERCENT := false
 TW_NO_USB_STORAGE := false
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_SUPERSU := true
-TW_SCREEN_BLANK_ON_BOOT := true #Need to know about this.
 TW_EXTRA_LANGUAGES := true
 TW_DEFAULT_LANGUAGE := en
 
@@ -144,7 +142,6 @@ TW_DEFAULT_LANGUAGE := en
 
 PLATFORM_SECURITY_PATCH := 2019-10-05
 BOARD_OS_VERSION := 9.0.0
-BOARD_HEADER_VERSION := 1
 
 # Debug
 
