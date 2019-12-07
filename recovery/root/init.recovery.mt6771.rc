@@ -28,6 +28,7 @@ on init
     setprop crypto.ready 1
 
 on fs
+    write /sys/class/power_supply/usb/otg_switch 1
     export ANDROID_ROOT /system_root
 
 on post-fs-data
@@ -82,6 +83,9 @@ service keymaster-3-0 /sbin/android.hardware.keymaster@3.0-service
     disabled
     seclabel u:r:recovery:s0
 
+on boot
+    setprop sys.usb.config adb
+    
 on property:crypto.ready=0
     stop keymaster-3-0
     stop gatekeeper-1-0
