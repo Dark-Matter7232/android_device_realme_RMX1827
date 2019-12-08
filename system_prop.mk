@@ -34,4 +34,4 @@ persist.sys.usb.config=mtp,adb \
 sys.usb.config=mtp,adb \
 sys.usb.state=mtp,adb \
 persist.service.debuggable=1 \
-ro.allow.mock.location=0
+ro.allow.mock.location=1
