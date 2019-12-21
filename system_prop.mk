@@ -22,16 +22,13 @@ ro.product.brand=OPPO
 ro.product.name=CPH1859
 ro.product.device=CPH1859
 ro.build.product=CPH1859
-ro.sys.usb.storage.type=mtp
-persist.service.adb.enable=1
-ro.secure=1
-ro.adb.secure=0
 
-#override few properties
-
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.sys.usb.config=mtp,adb \
-sys.usb.config=mtp,adb \
-sys.usb.state=mtp,adb \
-persist.service.debuggable=1 \
-ro.allow.mock.location=1
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.treble.enabled=true \
+    persist.sys.usb.config=mtp,adb \
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1 \
+    ro.secure=1 \
+    ro.adb.secure=0 \
+    ro.debuggable=1 \
+    ro.allow.mock.location=1
