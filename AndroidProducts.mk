@@ -16,4 +16,4 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_CPH1859.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_CPH1861.mk
