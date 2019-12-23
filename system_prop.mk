@@ -19,9 +19,10 @@
 # System properties for Realme 1, get these values through ADB or you can use 'adb shell getprop >> getprop.txt' command to get every prop.
 
 ro.product.brand=OPPO
-ro.product.name=CPH1859
-ro.product.device=CPH1859
-ro.build.product=CPH1859
+ro.product.name=CPH1861
+ro.product.device=CPH1861
+ro.product.device=CPH1861
+ro.build.product=CPH1861
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.treble.enabled=true \
