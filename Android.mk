@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-ifneq ($(filter CPH1861,$(TARGET_DEVICE)),)
+ifneq ($(filter RMX1827,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
